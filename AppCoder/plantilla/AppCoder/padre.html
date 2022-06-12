@@ -20,10 +20,12 @@
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
-                <a class="btn btn-primary" href="inicio">Inicio</a>
-                <a class="btn btn-primary" href="estudiantes">Estudiantes</a>
-                <a class="btn btn-primary" href="profesores">Profesores</a>
-                <a class="btn btn-primary" href="entregables">Entregables</a>
+                <a class="btn btn-primary" href="{% url 'Inicio' %}">Inicio</a>
+                <a class="btn btn-primary" href="{% url 'Estudiantes' %}">Estudiantes</a>
+                <a class="btn btn-primary" href="{% url 'Cursos' %}">Cursos</a>
+                <a class="btn btn-primary" href="{% url 'Profesores' %}">Profesores</a>
+                <a class="btn btn-primary" href="{% url 'Entregables' %}">Entregables</a>
+                
             </div>
         </nav>
         <!-- Masthead-->
@@ -202,7 +204,7 @@
                 </div>
             </div>
         </section>
-
+{% block contenidoQueCambia %}
         <!-- Footer-->
         <footer class="footer bg-light">
             <div class="container">
@@ -246,3 +248,4 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
+{% endblock %}
