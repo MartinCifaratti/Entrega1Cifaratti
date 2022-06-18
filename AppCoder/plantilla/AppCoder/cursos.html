@@ -1,0 +1,10 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="btn btn-primary" href="{% url 'altacurso' %}">Cargar curso</a>
+        <a class="btn btn-primary" href="{% url 'buscarcurso' %}">Buscar curso</a>
+    </div>
+{% endblock %}
